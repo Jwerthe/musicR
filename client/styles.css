@@ -1,0 +1,63 @@
+.main-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tabs-container {
+    margin-bottom: 20px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+}
+
+.tab-button {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background: #f0f0f0;
+}
+
+.tab-button.active {
+    background: #007bff;
+    color: white;
+}
+
+#Form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputs {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+.send, .get {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.randomSong {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+#songList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
