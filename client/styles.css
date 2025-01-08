@@ -1,7 +1,15 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .main-container {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    background-color: blanchedalmond;
+    border-radius: 38px;
+    border: 1px solid coral;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tab-content {
@@ -19,24 +27,41 @@
 .tabs {
     display: flex;
     gap: 10px;
+    justify-content: right;
 }
 
 .tab-button {
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    background: #f0f0f0;
+    border-radius: 15px;
+    background: rgba(165, 42, 42, 0.623);
+    color: white;
+    border: 1px solid white;
 }
 
 .tab-button.active {
-    background: #007bff;
+    background: brown;
     color: white;
+    transform: scale(1.11); 
+    transition: transform 0.4s ease;
 }
 
 #Form {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+}
+
+input{
+    border: 1px solid coral;
+    border-radius: 10px;
+    caret-color: coral;
+}
+
+h1{
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 .inputs {
@@ -47,17 +72,30 @@
 .send, .get {
     padding: 10px 20px;
     cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid white;
+    background-color: coral;
+    color: white;
+}
+
+.send:hover, .get:hover {
+    border: 1px solid coral;
+    background-color: white;
+    color: coral;
+    transform: scale(1.06); 
+    transition: transform 0.4s ease;
 }
 
 .randomSong {
-    border: 1px solid #ddd;
-    padding: 15px;
+    border: 1px solid white;
+    background-color: rgba(255, 127, 80, 0.415);
+    padding: 20px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 38px;
 }
 
 #songList {
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 5px;
 }
