@@ -85,9 +85,11 @@ async function getData() {
             existingElement.remove();
         }
         
-        newElement.innerHTML = `La canción es: ${data.name} - ${data.artist}<br>
-            Enlace: <a href='${data.url_video}' target='_blank'>${data.url_video}</a>
-            <br><br>Votos: ${data.votes}`;
+        newElement.innerHTML = `
+        <span class="song-title">${data.name} - ${data.artist}</span><br>
+        <br><span class="song-link"> 🔗: <a href='${data.url_video}' target='_blank'>${data.url_video}</a></span>
+        <br><br><span class="song-votes">Votos: ${data.votes}</span>
+    `;
         form.appendChild(newElement);
     } catch(error) {
         console.error(error);
@@ -126,7 +128,7 @@ async function allSongs() {
                 songElement.innerHTML = `
                     <h3>${song.name} - ${song.artist}</h3>
                     <p><a href="${song.url_video}" target="_blank">${song.url_video}</a></p>
-                    <br><p id="votes-${song._id}">Votos: ${song.votes}</p>
+                    <p id="votes-${song._id}">Votos: ${song.votes}</p>
                     <button onclick="updateVotes('${song._id}')" class="get">
                         Votar
                     </button>

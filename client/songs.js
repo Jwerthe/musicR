@@ -33,7 +33,7 @@ async function allSongs() {
                 songElement.id = 'randomSong';
                 songElement.innerHTML = `
                     <h3>${song.name} - ${song.artist}</h3>
-                    <p><a href="${song.url_video}" target="_blank">${song.url_video}</a></p>
+                    <p>🔗: <a href="${song.url_video}" target="_blank">${song.url_video}</a></p>
                     <br><p id="votes-${song._id}">Votos: ${song.votes}</p>
                     <button onclick="updateVotes('${song._id}')" class="get">
                         Votar

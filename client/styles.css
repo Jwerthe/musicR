@@ -1,15 +1,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #121312;
 }
 
 .main-container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    background-color: blanchedalmond;
+    background-color: #dcc9a9;
     border-radius: 38px;
-    border: 1px solid coral;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .tab-content {
@@ -35,14 +34,13 @@ body {
     cursor: pointer;
     border: none;
     border-radius: 15px;
-    background: rgba(165, 42, 42, 0.623);
+    background: #ac5045;
     color: white;
-    border: 1px solid white;
 }
 
 .tab-button.active {
     background: brown;
-    color: white;
+    border: 1px solid brown;
     transform: scale(1.11); 
     transition: transform 0.4s ease;
 }
@@ -54,14 +52,15 @@ body {
 }
 
 input{
-    border: 1px solid coral;
+    border: none;
     border-radius: 10px;
-    caret-color: coral;
+    caret-color: #ac5045;
 }
 
 h1{
     text-align: center;
     font-size: 1.5rem;
+    color: #0c3b2e;
 }
 
 .inputs {
@@ -73,29 +72,91 @@ h1{
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 15px;
-    border: 1px solid white;
-    background-color: coral;
+    border: none;
+    background-color: #4e6851;
     color: white;
 }
 
 .send:hover, .get:hover {
-    border: 1px solid coral;
+    border: 1px solid #4e6851;
     background-color: white;
-    color: coral;
+    color: #4e6851;
     transform: scale(1.06); 
     transition: transform 0.4s ease;
 }
 
 .randomSong {
-    border: 1px solid white;
-    background-color: rgba(255, 127, 80, 0.415);
+    background-color: #ffffff33;
     padding: 20px;
     margin: 10px 0;
     border-radius: 38px;
+    color: white;
+    text-align: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.randomSong h3 {
+    display: block;
+    font-weight: bolder;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #ac5045;
+    background-color: #ffffff36;
+    max-width: fit-content;
+}
+
+.randomSong a {
+    display: block;
+    text-decoration: none;
+    color: #0c3b2e;
+}
+
+.randomSong p {
+    display: block;
+    background-color: #ffffff36;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: #0c3b2e; 
+    text-align: left;
+    width: fit-content;
 }
 
 #songList {
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    flex-direction: column; 
+}
+
+#randomSong {
+    background-color: #ffffff33;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#randomSong .song-title {
+    font-weight: bolder;
+    background-color: #ffffff36;
+    color: #ac5045;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+}
+
+#randomSong .song-link {
+    background-color: #ffffff36;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
+.song-link a {
+    text-decoration: none;
+    color: #0c3b2e;
+}
+
+#randomSong .song-votes {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #ffffff36;
+    border-radius: 10px;
+    color: #0c3b2e;
 }
